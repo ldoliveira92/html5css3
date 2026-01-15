@@ -1,0 +1,45 @@
+/* Smartphone Portrait*/
+
+@media (max-width: 575px) {
+    body {
+        background-color: #413eff;
+    }
+}
+
+/* Smartphone Landscape */
+
+@media (min-width: 576px) {
+    body {
+        background-color: #00f100;
+    }
+}
+
+/* Tablet Portrait */
+
+@media (min-width: 768px) {
+    body {
+        background-color: #f3f724;
+    }
+}
+
+/* Tablet Landscape */
+
+@media (min-width: 992px) {
+    body {
+        background-color: #ff6a00;
+    }
+    
+}
+/* PC */
+
+@media (min-width: 1099px) {
+    body {
+        background-color: #ff0000;
+    }
+}
+
+img {
+    max-width: 35%;
+    height: auto;
+    margin:auto
+}
