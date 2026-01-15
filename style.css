@@ -1,0 +1,11 @@
+.container {
+    padding: 100px 150px;
+    border-radius: 5px;
+    border: 1px;
+    display:flex;
+    align-items: first baseline;
+}
+
+p {
+    font-size: 20px;
+}
