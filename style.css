@@ -1,9 +1,144 @@
+/* CSS Reset - para zerar margem, padding e borda */
+* {
+    margin: 0;
+    border: 0;
+    font-family:'Nunito', sans-serif;
+    align-items: center;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+
+}
+
+#topo {
+    background-color: antiquewhite;
+    border: black 1px solid;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.Flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inicio {
+    padding: 90%wh;
+    margin: 0 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    align-items: center;
+    text-align: justify;
+    display:block;
+    text-indent: 15px;
+    border-bottom: black 1px solid;
+    color: blanchedalmond;
+}
+
+.imgsobre {
+    float: left;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+
+.familia {
+    padding: 90%wh;
+    margin: 0 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    align-items: center;
+    text-align: justify;
+    display:block;
+    text-indent: 15px;
+    border-bottom: black 1px solid;
+    color: blanchedalmond;
+}
+
+.imgfamilia {
+    float: right;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.titulo2 {
+    text-align: right;
+}
+
+.jogo {
+    padding: 90%wh;
+    margin: 0 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    align-items: center;
+    text-align: justify;
+    display:block;
+    text-indent: 15px;
+    border-bottom: black 1px solid;
+    color: blanchedalmond;  
+}
+
+.imgjogo {
+    float: left;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Botão inferior */
+
+#botao {
+    position: fixed;
+    right:10px;
+    bottom: 10px;
+    background-image: none;
+}
+
+.projetos {
+    margin-top:20px;
+    color:white;
+    text-align: center;
+    border:white 2px solid;
+    border-radius: 5px;
+    width: 150px;
+    height: 180px;
+}
+
+.imgprojetos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    height:70px;
+    width:190px;
+}
+
+.Flex1 {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+footer {
+    color:white;
+    font-size: 10px;
+    text-align: center;
+    margin:auto;
+    margin-top:10px;
+
+}
+
 /* Smartphone Portrait*/
 
 @media (max-width: 575px) {
-    body {
-        background-color: #413eff;
-    }
+    
 }
 
 /* Smartphone Landscape */
@@ -12,13 +147,27 @@
     body {
         background-color: #00f100;
     }
+    .Container {
+        width: 540px;
+    }
 }
 
 /* Tablet Portrait */
 
 @media (min-width: 768px) {
-    body {
-        background-color: #f3f724;
+    
+    #familia, #mudandoojogo {
+        margin-top: 100px;
+        ;
+    }
+
+    #imgsobre, #imgfamilia, #imgjogo {
+        height: 320px;
+        width:250;
+    }
+
+    .Container {
+        width: 720px;
     }
 }
 
@@ -28,6 +177,9 @@
     body {
         background-color: #ff6a00;
     }
+    .Container {
+        width: 960px;
+    }
     
 }
 /* PC */
@@ -35,6 +187,9 @@
 @media (min-width: 1099px) {
     body {
         background-color: #ff0000;
+    }
+    .Container {
+        width: 1140px;
     }
 }
 
