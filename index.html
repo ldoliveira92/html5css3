@@ -26,9 +26,9 @@
                 <input type="checkbox" id="check">
                 <label for="check">&#x2630;</label>
                 <ul>
-                    <li><a href="#inicio">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#inicio" onclick="document.getElementById('check').checked=false">Sobre</a></li>
+                    <li><a href="#projetos" onclick="document.getElementById('check').checked=false">Projetos</a></li>
+                    <li><a href="#contato" onclick="document.getElementById('check').checked=false">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,7 +37,7 @@
 
     <!-- Conteúdo principal -->
     <main>
-        <section class="inicio">
+        <section class="inicio" id="inicio">
             <div>
                 <img class="imgsobre img" src="./img/sobre.JPG">
             </div>
@@ -73,7 +73,8 @@
                     por mais que os dois já obtivessem a aprovação, cada um em seu concurso público, ainda aguardávamos
                     a nomeação.
                     Por fim, apesar do baque ter sido grande, a famíia deu todo o suporte, e, cinco anos depois o
-                    <b>Theo</b> veio ao mundo para completar o time.</p>
+                    <b>Theo</b> veio ao mundo para completar o time.
+                </p>
             </div>
         </section>
 
@@ -99,17 +100,30 @@
 
         <!-- Seção de Projetos -->
 
-        <section class="Flex1">
-            <div id= projetos class="projetos">
+        <section class="Flex1" id="projetos">
+            <div id=projetos class="projetos">
                 <h2>Projetos</h2>
                 <img class="imgprojetos" src="img/projetos.jpg" alt="Meus Projetos">
                 <h3> Site pessoal </h3>
             </div>
         </section>
+
+        <!-- Seção de Contato -->
+
+        <section class="contato" id="contato">
+            <div>
+                <h2>Contato</h2>
+                <p class="contato">Fique à vontade para entrar em contato comigo:</p>
+                <ul>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/leonardo-duarte-oliveira-9b8725204/"
+                            target="_blank">Leonardo Duarte Oliveira</a></li>
+                    <li>Email: <a href="mailto:ldoliveira@live.com" target="_blank">ldoliveira@live.com</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/leonardo.do/" target="_blank">leonardo.do</a></li>
+                    <li>WhatsApp: <a href="https://wa.me/5551998653108" target="_blank">5551998653108</a></li>
     </main>
 
     <!-- Rodapé -->
-    <footer id="contato">
+    <footer>
         <p class="pfooter">© 2026 Leonardo Duarte Oliveira. Todos os direitos reservados.</p>
     </footer>
 
